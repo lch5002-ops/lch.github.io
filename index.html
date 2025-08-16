@@ -71,6 +71,78 @@
   <div class="fixed-banner">
     <a href="https://open.kakao.com/o/sHeqX4hh" target="_blank">📩 상담 신청하기</a>
   </div>
+<!-- 고정 배너 -->
+<div class="fixed-banner">
+  <div class="banner-content">
+    <span class="banner-text">📢 지금 바로 전문가와 상담해보세요!</span>
+    <a href="https://open.kakao.com/o/sHeqX4hh" target="_blank" class="banner-btn">
+      💬 상담 신청하기
+    </a>
+  </div>
+</div>
+
+<style>
+  /* 고정 배너 스타일 */
+  .fixed-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #1e3a8a, #2563eb, #3b82f6);
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    box-shadow: 0 -2px 12px rgba(0,0,0,0.3);
+    z-index: 9999;
+  }
+
+  .banner-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  .banner-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    flex: 1 1 auto;
+    text-align: left;
+  }
+
+  .banner-btn {
+    background: #fff;
+    color: #2563eb;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+    white-space: nowrap;
+  }
+
+  .banner-btn:hover {
+    background: #f3f4f6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+
+  /* 모바일 대응 */
+  @media (max-width: 600px) {
+    .banner-content {
+      flex-direction: column;
+      text-align: center;
+    }
+    .banner-text {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+</style>
 
   <footer>
     <p>© 2025 아파트추가담보대출 경험담. 모든 권리 보유.</p>
